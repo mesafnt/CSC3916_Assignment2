@@ -4,7 +4,7 @@ The purpose of this assignment is to start working with Node.js and become more 
 
 You will create a standard Node.js server to handle incoming HTTP requests and then respond with information about the request. The server should be able to read incoming header and query parameters and include this information in the response. The server should also only accept certain incoming requests and block others.
 
-You may use any of the standard packages included in Node.js or any third-party packages to complete this assignment.
+You may use any of the standard packages included in Node.js or any third-party packages to complete  assignment.
 
 ## Requirements
 - Create a Node.js server that accepts requests and creates responses and host it on Heroku.
