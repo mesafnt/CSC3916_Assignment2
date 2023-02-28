@@ -72,7 +72,7 @@ router.post('/signin', (req, res) => {
     }
 });
 
-router.route('/testcollection')
+router.route('/movies')
     .delete(authController.isAuthenticated, (req, res) => {
         console.log(req.body);
         res = res.status(200);
