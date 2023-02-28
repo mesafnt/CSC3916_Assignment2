@@ -83,6 +83,28 @@ router.route('/movies')
         res.json(o);
     }
     )
+    .post(authController.isAuthenticated, (req, res) => {
+        console.log(req.body);
+        res = res.status(200);
+        if (req.get('Content-Type')) {
+            res = res.type(req.get('Content-Type'));
+        }
+        var o = getJSONObjectForMovieRequirement(req);
+        res.json(o);
+    }
+    )
+
+    .get(authController.isAuthenticated, (req, res) => {
+        console.log(req.body);
+        res = res.status(200);
+        if (req.get('Content-Type')) {
+            res = res.type(req.get('Content-Type'));
+        }
+        var o = getJSONObjectForMovieRequirement(req);
+        res.json(o);
+    }
+    )
+
     .put(authJwtController.isAuthenticated, (req, res) => {
         console.log(req.body);
         res = res.status(200);
